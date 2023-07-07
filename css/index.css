@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav > img {
+    width: 100px;
+}
+
+.nav-items {
+    display: flex;
+    place-items: center;
+}
+
+.nav-item {
+    margin: 0px 15px;
+    font-weight: lighter;
+    color: #07394d;
+}
+
+.signin-btn {
+    padding: 2px 15px;
+    /* font-size: 11px; */
+    border: none;
+    border-radius: 20px;
+    height: fit-content;
+    position: relative;
+    top: 8px;
+    color: #ffffff;
+    background: linear-gradient(90deg, #6a94d0 0%, #e172e3 100%);
+}
+
+.imgs-div > .vector-img {
+    width: 70px;
+    position: relative;
+    bottom: 90px;
+    left: 560px;
+    transform: rotate(2deg);
+}
+
+.imgs-div > .vector-dot {
+    width: 11px;
+    position: relative;
+    bottom: 115px;
+    left: 535px;
+}
+
+.left-section {
+    position: relative;
+    top: 100px;
+    left: 120px;
+}
+
+.left-section > h1 {
+    font-size: 50px;
+    margin: 10px;
+    color: #0A4D68;
+    letter-spacing: 1px;
+
+}
+
+.left-section > h4 {
+    width: 280px;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 10px;
+    padding: 20px 0;
+    font-weight: lighter;
+}
+
+.left-section > button {
+    padding: 8px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    background: linear-gradient(90deg, #6a94d0 0%, #e172e3 100%);
+    color: #ffffff;
+}
+
+.imgs-div::after {
+    content: '';
+    background: url(../images/backcover.svg);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position-x: 105%;
+    background-size: 950px;
+   background-position-y: 110%;
+}
+
+.imgs-div > img {
+    width: 800px;
+    height: 500px;
+    z-index: +1;
+    position: relative;
+    bottom: 250px;
+    left: 410px;
+    /* transform: rotate(-10deg); */
+    transform: scaleX(1.4);
+}
